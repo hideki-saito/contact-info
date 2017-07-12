@@ -1,0 +1,128 @@
+
+2017-07-12 17:04:51,524 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:04:51,524 INFO newProx_piplscraper(20) proxy->204.12.155.204 ticker_number->33
+
+2017-07-12 17:05:27,745 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:05:27,745 INFO newProx_piplscraper(20) proxy->171.97.78.141 ticker_number->28
+
+2017-07-12 17:06:03,035 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:06:03,035 INFO newProx_piplscraper(20) proxy->202.154.182.197 ticker_number->34
+
+2017-07-12 17:07:37,750 INFO get_Info(34) 
+
+SHEETNAME -> Hello Bar June 2017
+
+
+
+2017-07-12 17:07:37,751 INFO get_Info(51) Index-> 0   Ticker->0    Email->abhishekchauhan@in.ibm.com
+2017-07-12 17:08:26,784 INFO get_Info(51) Index-> 1   Ticker->1    Email->alba.walcott@piper.com
+2017-07-12 17:09:14,765 INFO get_Info(51) Index-> 2   Ticker->2    Email->adrake@gtoaccess.com
+2017-07-12 17:09:46,770 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:09:46,770 INFO newProx_piplscraper(20) proxy->46.101.26.217 ticker_number->29
+
+2017-07-12 17:10:08,989 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:10:08,989 INFO newProx_piplscraper(20) proxy->144.217.33.52 ticker_number->37
+
+2017-07-12 17:11:23,498 INFO get_Info(51) Index-> 2   Ticker->0    Email->adrake@gtoaccess.com
+2017-07-12 17:12:04,296 INFO get_Info(51) Index-> 3   Ticker->1    Email->andrmaz@rcn.com
+2017-07-12 17:12:45,235 INFO get_Info(51) Index-> 4   Ticker->2    Email->aslothower@spyglasscreative.com
+2017-07-12 17:13:01,050 INFO get_Info(51) Index-> 5   Ticker->3    Email->angela.starnes@vmsbiomarketing.com
+2017-07-12 17:13:43,894 INFO get_Info(51) Index-> 6   Ticker->4    Email->armando.avila@mx.abb.com
+2017-07-12 17:14:16,302 INFO get_Info(51) Index-> 7   Ticker->5    Email->arnaudfluro@gmail.com
+2017-07-12 17:14:30,642 INFO get_Info(51) Index-> 8   Ticker->6    Email->artur.korczak@pwrze.utc.com
+2017-07-12 17:15:11,384 INFO get_Info(51) Index-> 9   Ticker->7    Email->badia.adjeriou@covance.com
+2017-07-12 17:15:51,565 INFO get_Info(51) Index-> 10   Ticker->8    Email->beatrice.bill@bog.gov.gh
+2017-07-12 17:16:20,774 INFO get_Info(51) Index-> 11   Ticker->9    Email->beatriz.m.leon@aexp.com
+2017-07-12 17:16:37,803 INFO get_Info(51) Index-> 12   Ticker->10    Email->broth@mktg.com
+2017-07-12 17:17:21,724 INFO get_Info(51) Index-> 13   Ticker->11    Email->bding@snapchat.com
+2017-07-12 17:17:25,606 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:17:25,606 INFO newProx_piplscraper(20) proxy->210.16.79.161 ticker_number->30
+
+2017-07-12 17:18:00,745 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:18:00,745 INFO newProx_piplscraper(20) proxy->46.101.48.24 ticker_number->25
+
+2017-07-12 17:18:06,287 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:18:06,287 INFO newProx_piplscraper(20) proxy->137.59.44.47 ticker_number->26
+
+2017-07-12 17:19:10,454 INFO get_Info(51) Index-> 13   Ticker->0    Email->bding@snapchat.com
+2017-07-12 17:19:53,160 INFO get_Info(51) Index-> 14   Ticker->1    Email->dhoihirati.boura@laposte.net
+2017-07-12 17:20:09,586 INFO get_Info(51) Index-> 15   Ticker->2    Email->cgonzalezm@bepensa.com
+2017-07-12 17:20:47,667 INFO get_Info(51) Index-> 16   Ticker->3    Email->cdowell@ascellon.com
+2017-07-12 17:21:29,159 INFO get_Info(51) Index-> 17   Ticker->4    Email->sd@s.com
+2017-07-12 17:21:52,728 INFO get_Info(51) Index-> 18   Ticker->5    Email->cayala@webershandwick.com
+2017-07-12 17:22:29,785 INFO get_Info(51) Index-> 19   Ticker->6    Email->cclifford@landmarkworldwide.com
+2017-07-12 17:23:03,208 INFO get_Info(51) Index-> 20   Ticker->7    Email->chris@tigerathletics.com
+2017-07-12 17:23:12,823 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:23:12,823 INFO newProx_piplscraper(20) proxy->142.4.204.69 ticker_number->31
+
+2017-07-12 17:27:23,096 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:27:23,097 INFO newProx_piplscraper(20) proxy->91.236.61.253 ticker_number->28
+
+2017-07-12 17:27:58,054 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:27:58,055 INFO newProx_piplscraper(20) proxy->202.154.182.197 ticker_number->40
+
+2017-07-12 17:28:49,790 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:28:49,790 INFO newProx_piplscraper(20) proxy->35.154.6.65 ticker_number->39
+
+2017-07-12 17:29:57,227 INFO get_Info(34) 
+
+SHEETNAME -> Hello Bar June 2017
+
+
+
+2017-07-12 17:29:57,228 INFO get_Info(51) Index-> 76   Ticker->0    Email->william.newman@millicom.com
+2017-07-12 17:30:19,257 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:30:19,257 INFO newProx_piplscraper(20) proxy->89.40.116.171 ticker_number->39
+
+2017-07-12 17:31:23,523 INFO get_Info(51) Index-> 76   Ticker->0    Email->william.newman@millicom.com
+2017-07-12 17:31:44,030 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:31:44,030 INFO newProx_piplscraper(20) proxy->98.172.91.132 ticker_number->31
+
+2017-07-12 17:32:18,938 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:32:18,938 INFO newProx_piplscraper(20) proxy->202.154.180.90 ticker_number->25
+
+2017-07-12 17:32:54,142 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:32:54,142 INFO newProx_piplscraper(20) proxy->200.229.202.123 ticker_number->32
+
+2017-07-12 17:33:00,307 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:33:00,307 INFO newProx_piplscraper(20) proxy->188.166.144.79 ticker_number->28
+
+2017-07-12 17:33:06,156 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:33:06,156 INFO newProx_piplscraper(20) proxy->144.217.31.225 ticker_number->25
+
+2017-07-12 17:34:07,253 INFO get_Info(51) Index-> 76   Ticker->0    Email->william.newman@millicom.com
+2017-07-12 17:34:41,494 INFO get_Info(51) Index-> 77   Ticker->1    Email->stxyr2@nottingham.ac.uk
+2017-07-12 17:34:55,870 INFO get_Info(51) Index-> 78   Ticker->2    Email->jimmycha@microsoft.com
+2017-07-12 17:35:13,972 INFO get_Info(34) 
+
+SHEETNAME -> ISM US 2017
+
+
+
+2017-07-12 17:35:13,975 INFO get_Info(51) Index-> 0   Ticker->3    Email->rdarnell@deltadentalmi.com
+2017-07-12 17:35:15,506 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:35:15,506 INFO newProx_piplscraper(20) proxy->158.69.31.45 ticker_number->25
+
+2017-07-12 17:36:17,965 INFO get_Info(51) Index-> 0   Ticker->0    Email->rdarnell@deltadentalmi.com
+2017-07-12 17:36:36,430 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:36:36,430 INFO newProx_piplscraper(20) proxy->92.222.167.44 ticker_number->29
+
+2017-07-12 17:37:11,330 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:37:11,331 INFO newProx_piplscraper(20) proxy->191.252.103.93 ticker_number->40
+
+2017-07-12 17:38:18,901 INFO get_Info(51) Index-> 0   Ticker->0    Email->rdarnell@deltadentalmi.com
+2017-07-12 17:38:39,310 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:38:39,310 INFO newProx_piplscraper(20) proxy->195.190.124.202 ticker_number->39
+
+2017-07-12 17:39:14,298 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:39:14,299 INFO newProx_piplscraper(20) proxy->79.170.167.64 ticker_number->39
+
+2017-07-12 17:40:21,377 INFO get_Info(51) Index-> 0   Ticker->0    Email->rdarnell@deltadentalmi.com
+2017-07-12 17:41:08,070 INFO get_Info(51) Index-> 1   Ticker->1    Email->vivek.sengupta@icann.org
+2017-07-12 17:41:49,725 INFO get_Info(51) Index-> 2   Ticker->2    Email->leisele@ouc.com
+2017-07-12 17:42:12,706 INFO get_Info(51) Index-> 3   Ticker->3    Email->dkolpak@campbellhausfeld.com
+2017-07-12 17:42:56,828 INFO get_Info(51) Index-> 4   Ticker->4    Email->kelly.harris@vanderbilt.edu
+2017-07-12 17:43:34,544 INFO get_Info(51) Index-> 5   Ticker->5    Email->ljtabone@gmail.com
+2017-07-12 17:43:50,203 INFO newProx_piplscraper(19) ========================================
+2017-07-12 17:43:50,203 INFO newProx_piplscraper(20) proxy->70.35.197.74 ticker_number->32
+

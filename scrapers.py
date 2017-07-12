@@ -24,9 +24,10 @@ class PiplScraper():
         profile.set_preference("network.proxy.ssl_port", int(port))
         profile.update_preferences()
         self.driver = webdriver.Firefox(firefox_profile=profile,
-                                        executable_path=r'/home/hideki/My_work/data_mining/contact_info/lib/geckodriver')
+                                        executable_path=os.path.join(rootpath, 'driver', 'geckodriver'))
 
         self.driver.maximize_window()
+        self.driver.set_page_load_timeout(30)
 
 
     def starting(self):
@@ -71,10 +72,15 @@ class PiplScraper():
             pass
 
         try:
-            data['name'] =  self.driver.find_element_by_class_name("header").text
+            data['age'] = self.driver.find_element_by_class_name('age').text
+        except:
+            pass
+
+        try:
+            data['fullname'] =  self.driver.find_element_by_class_name("header").text
             properties = self.driver.find_elements_by_class_name("row-line")
             for i in properties:
-                title = i.find_element_by_class_name("field_label").text
+                title = i.find_element_by_class_name("field_label").text.lower().strip(":").strip("s")
                 value = i.find_element_by_class_name('values').text
                 data[title] = value
         except:
@@ -82,26 +88,48 @@ class PiplScraper():
 
         return data
 
+    def get_relativeResult(self):
+        try:
+            self.driver.find_element_by_xpath("//div[@class='profile_result_content search_link'][1]/div/a").click()
+            sleep(random.randint(delay_min, delay_max))
+            return self.get_data()
+        except:
+            return {}
 
-    def scrping(self, email):
-        self.search(email)
-        data = self.get_data()
-        data['email'] = email
-        print (json.dumps(data, indent=2))
+    def formatting_data(self, raw_data):
+        data = raw_data
+        for new_column in output_newColumns:
+            if not new_column in data.keys():
+                data[new_column] = ""
 
         return data
 
+    def scrping(self, email):
+        self.search(email)
+        data1 = self.get_data()
+        # data1['email'] = email
+        data1.pop('', None)
 
-def get_proxy():
+        data2 = self.get_relativeResult()
+
+        # data2['email'] = email
+        data2.pop('', None)
+
+        return self.formatting_data(data1), self.formatting_data(data2)
+
+
+def get_proxy(current_proxy, block_status):
+    from random import shuffle
+
+    blockedProxies_path = os.path.join(rootpath, 'status', "blocked_proxies.txt")
     try:
-        with open("blocked_proxies.txt") as f:
+        with open(blockedProxies_path) as f:
             blocked_proxies = [item.strip("\n") for item in f.readlines()]
-            current_proxy = blocked_proxies[-1]
+
     except:
-        with open("blocked_proxies.txt", 'w') as f:
+        with open(blockedProxies_path, 'w') as f:
             f.write("")
             blocked_proxies = []
-            current_proxy = ''
 
     print(current_proxy)
     print (blocked_proxies)
@@ -109,44 +137,43 @@ def get_proxy():
     r = requests.get(url, verify=False)
     soup = BeautifulSoup(r.content)
     proxie_tags = soup.find('table', attrs={'id':'proxylisttable'}).find_all('tr')[1:-1]
-
+    shuffle(proxie_tags)
     for tag in proxie_tags:
         proxy = tag.find_all("td")[0].text.strip()
         port = tag.find_all("td")[1].text.strip()
-        if proxy!=current_proxy and not proxy in blocked_proxies:
-            with open("blocked_proxies.txt", 'a') as f:
-                f.write(proxy)
-                f.write("\n")
+        https = tag.find_all("td")[6].text.strip()
+        # country = tag.find_all("td")[3].text.strip()
+        # and country == "United States"
+        if proxy != current_proxy and not proxy in blocked_proxies and https=="yes":
+            if block_status:
+                with open(blockedProxies_path, 'a') as f:
+                    f.write(current_proxy)
+                    f.write("\n")
             return proxy, port
 
     print("No Proxy")
     sys.exit()
 
 
-def getProx_test():
-    get_proxy()
-    get_proxy()
-    get_proxy()
-    get_proxy()
-    get_proxy()
-
-getProx_test()
-
-
 def piplScraper_tester():
-    proxy = "204.13.204.110"
-    port = "8080"
+    proxy = "144.217.33.52"
+    port = "3128"
     emailList = ['leeann.pozos@amd.com', 'ewmeyer@marathonoil.com', 'rodney.miller@gsa.gov', 'aimee.cooper@gsa.gov']
-    pipl_scraper = PiplScraper('','1')
+    # pipl_scraper = PiplScraper('','1')
+    pipl_scraper = PiplScraper(proxy, port)
     pipl_scraper.starting()
 
     for email in emailList:
-        pipl_scraper.scrping(email)
-        if not pipl_scraper.check_accessDenied():
+        data1, data2 = pipl_scraper.scrping(email)
+        if pipl_scraper.check_accessDenied():
             pipl_scraper.driver.quit()
             pipl_scraper = PiplScraper(proxy, port)
             pipl_scraper.starting()
-            pipl_scraper.scrping(email)
+            data1, data2 = pipl_scraper.scrping(email)
 
-# pipl_scraper.driver.get("http://whatismyipaddress.com")
+        print(json.dumps(data1, indent=2))
+        print(json.dumps(data2, indent=2))
+
+
+# piplScraper_tester()
 
