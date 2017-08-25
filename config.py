@@ -5,6 +5,7 @@ rootpath = os.path.dirname(os.path.realpath(__file__))
 
 source_file = os.path.join(rootpath, 'input', "Contactable Database - consolidated contacts_6.27.17.xlsx")
 output = os.path.join(rootpath, 'output', "output.xlsx")
+image_path = os.path.join(rootpath, 'check_images')
 
 
 # more_info = [1,2,6,7]
@@ -14,7 +15,7 @@ output = os.path.join(rootpath, 'output', "output.xlsx")
 key_columns = {'webinars':'Email',
                'Hello Bar June 2017':'Contact Email Address',
                "ISM US 2017":"Email",
-               "Inc 5000":"CEO Email",
+               "Inc 5000":"Unnamed: 12",
                "2016 Events":'Email',
                "Integrated Camp Lead Score 25+":'Email Address',
                "in Eloqua but not SFDC":'Email Address'}
@@ -31,8 +32,8 @@ ticker_max = 40
 
 pipl = {"init_url": "https://pipl.com",
         "login_url": "https://pipl.com/accounts/login/",
-        "email":"saito_hideki.1127@outlook.com",
-        "password": "pipl1127",
+        "email":"email",
+        "password": "pw",
         "delay": 10}
 
 
